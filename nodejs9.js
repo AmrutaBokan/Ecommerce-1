@@ -19,7 +19,6 @@ app.post('/logincheck',function(req,res){
 
     if(req.body.uid=="maske")
     {
-    //res.send("hello bakul");
     req.session.name=req.body.uid;
    res.cookie("uid","maske");
     res.redirect('/welcome')
