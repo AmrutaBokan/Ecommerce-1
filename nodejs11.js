@@ -8,7 +8,6 @@ app.use(bodypar.urlencoded({'extended':false}));
 app.get('/register',function(req,res){
 
     res.render('register');
-
 });
 mongoose.connect("mongodb://localhost:27017/test");
 
